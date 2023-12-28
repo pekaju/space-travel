@@ -7,7 +7,11 @@
     "serve": "concurrently \"npm run vue-serve\" \"npm run go-serve\"",
     "vue-serve": "vue-cli-service serve --port 8085 --open",
     "go-serve": "cd backend && go run main.go",
-    "build": "vue-cli-service build"
+    "build": "npm run vue-build && npm run go-build",
+    "vue-build": "vue-cli-service build",
+    "go-build": "cd backend && go build -o app && cd ..",
+    "start": "npm run build && npm run go-start",
+    "go-start": "cd backend && ./app"
   },
   "devDependencies": {
     "@vue/cli-service": "^4.3.0",
