@@ -188,5 +188,9 @@ func main() {
 
 	handler := c.Handler(router)
 
-	log.Fatal(http.ListenAndServe(":8080", handler))
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080" // Default port if not specified
+	}
+	log.Fatal(http.ListenAndServe(":"+port, handler))
 }
