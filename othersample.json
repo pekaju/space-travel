@@ -1,0 +1,141 @@
+{
+  "totalDistance": "2454120000",
+  "validUntil": "2023-12-26T00:02:10.9143298Z",
+  "possibleRoutes": [
+    {
+      "totalPrice": "2174389.94",
+      "totalDuration": "17 days, 11 hours, 35 minutes",
+      "providers": [
+        {
+          "companyName": "Travel Nova",
+          "companyID": "3dc241df-68f1-4365-b0cd-68ce6734116a",
+          "price": 1221692.15,
+          "flightStart": "2023-12-26T19:01:10.916712Z",
+          "flightEnd": "2024-01-01T03:11:10.916712Z"
+        },
+        {
+          "companyName": "Space Piper",
+          "companyID": "0c6e28ac-83f0-4a6b-84a7-f46815801194",
+          "price": 543218.94,
+          "flightStart": "2024-01-01T10:33:10.9144225Z",
+          "flightEnd": "2024-01-06T13:47:10.9144225Z"
+        },
+        {
+          "companyName": "Galaxy Express",
+          "companyID": "53044b8b-3cdf-4e87-b399-200740ec1f6a",
+          "price": 409478.85,
+          "flightStart": "2024-01-07T17:55:10.9162788Z",
+          "flightEnd": "2024-01-13T06:36:10.9162788Z"
+        }
+      ]
+    },
+    {
+      "totalPrice": "2256599.05",
+      "totalDuration": "17 days, 11 hours, 35 minutes",
+      "providers": [
+        {
+          "companyName": "Travel Nova",
+          "companyID": "3dc241df-68f1-4365-b0cd-68ce6734116a",
+          "price": 1221692.15,
+          "flightStart": "2023-12-26T19:01:10.916712Z",
+          "flightEnd": "2024-01-01T03:11:10.916712Z"
+        },
+        {
+          "companyName": "Spacelux",
+          "companyID": "5148b746-b65d-4106-aab3-a4f31dba1f30",
+          "price": 625428.05,
+          "flightStart": "2024-01-01T11:09:10.9143455Z",
+          "flightEnd": "2024-01-06T20:18:10.9143455Z"
+        },
+        {
+          "companyName": "Galaxy Express",
+          "companyID": "53044b8b-3cdf-4e87-b399-200740ec1f6a",
+          "price": 409478.85,
+          "flightStart": "2024-01-07T17:55:10.9162788Z",
+          "flightEnd": "2024-01-13T06:36:10.9162788Z"
+        }
+      ]
+    },
+    {
+      "totalPrice": "1394113.24",
+      "totalDuration": "14 days, 23 hours, 53 minutes",
+      "providers": [
+        {
+          "companyName": "Travel Nova",
+          "companyID": "3dc241df-68f1-4365-b0cd-68ce6734116a",
+          "price": 1221692.15,
+          "flightStart": "2023-12-26T19:01:10.916712Z",
+          "flightEnd": "2024-01-01T03:11:10.916712Z"
+        },
+        {
+          "companyName": "Travel Nova",
+          "companyID": "3dc241df-68f1-4365-b0cd-68ce6734116a",
+          "price": 24703.56,
+          "flightStart": "2024-01-02T08:47:10.9144063Z",
+          "flightEnd": "2024-01-04T22:18:10.9144063Z"
+        },
+        {
+          "companyName": "Space Voyager",
+          "companyID": "895d146d-a9da-4ff5-89d6-94bc3a723be5",
+          "price": 147717.53,
+          "flightStart": "2024-01-05T00:48:10.9162945Z",
+          "flightEnd": "2024-01-10T18:54:10.9162945Z"
+        }
+      ]
+    },
+    {
+      "totalPrice": "1408497.38",
+      "totalDuration": "12 days, 2 hours, 36 minutes",
+      "providers": [
+        {
+          "companyName": "Travel Nova",
+          "companyID": "3dc241df-68f1-4365-b0cd-68ce6734116a",
+          "price": 1221692.15,
+          "flightStart": "2023-12-26T19:01:10.916712Z",
+          "flightEnd": "2024-01-01T03:11:10.916712Z"
+        },
+        {
+          "companyName": "Travel Nova",
+          "companyID": "3dc241df-68f1-4365-b0cd-68ce6734116a",
+          "price": 24703.56,
+          "flightStart": "2024-01-02T08:47:10.9144063Z",
+          "flightEnd": "2024-01-04T22:18:10.9144063Z"
+        },
+        {
+          "companyName": "Travel Nova",
+          "companyID": "3dc241df-68f1-4365-b0cd-68ce6734116a",
+          "price": 162101.67,
+          "flightStart": "2024-01-06T02:12:10.9161127Z",
+          "flightEnd": "2024-01-07T21:37:10.9161127Z"
+        }
+      ]
+    },
+    {
+      "totalPrice": "1655874.56",
+      "totalDuration": "17 days, 11 hours, 35 minutes",
+      "providers": [
+        {
+          "companyName": "Travel Nova",
+          "companyID": "3dc241df-68f1-4365-b0cd-68ce6734116a",
+          "price": 1221692.15,
+          "flightStart": "2023-12-26T19:01:10.916712Z",
+          "flightEnd": "2024-01-01T03:11:10.916712Z"
+        },
+        {
+          "companyName": "Travel Nova",
+          "companyID": "3dc241df-68f1-4365-b0cd-68ce6734116a",
+          "price": 24703.56,
+          "flightStart": "2024-01-02T08:47:10.9144063Z",
+          "flightEnd": "2024-01-04T22:18:10.9144063Z"
+        },
+        {
+          "companyName": "Galaxy Express",
+          "companyID": "53044b8b-3cdf-4e87-b399-200740ec1f6a",
+          "price": 409478.85,
+          "flightStart": "2024-01-07T17:55:10.9162788Z",
+          "flightEnd": "2024-01-13T06:36:10.9162788Z"
+        }
+      ]
+    }
+  ]
+}
