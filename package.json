@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "vue": "^3.2.36",
+    "vue-router": "^4.2.5"
+  },
+  "scripts": {
+    "serve": "concurrently \"npm run vue-serve\" \"npm run go-serve\"",
+    "vue-serve": "vue-cli-service serve --port 8085 --open",
+    "go-serve": "cd backend && go run main.go",
+    "build": "vue-cli-service build"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^4.3.0",
+    "concurrently": "^8.2.2"
+  }
+}
