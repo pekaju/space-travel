@@ -12,6 +12,9 @@ Welcome to the Space Travel Application!
 
 - **SQLite Database**: The application uses SQLite as its database, providing a lightweight and easily deployable solution. The database seamlessly stores and retrieves relevant information for a streamlined user experience.
 
+## About requirements
+It should fill all the requirements, except for presenting all possible routes between planets. Instead, it only presents the shortest route for each trip. 
+
 ## Getting Started
 
 ### Prerequisites
