@@ -3,8 +3,9 @@ import App from './App.vue';
 import { createRouter, createWebHashHistory } from 'vue-router';
 import LandingPage from './views/LandingPage.vue';
 import ResultsPage from './views/ResultsPage.vue';
-import RouteNotFound from './views/RouteNotFound.vue'
-import InternalError from './views/InternalError.vue'
+import RouteNotFound from './views/RouteNotFound.vue';
+import InternalError from './views/InternalError.vue';
+import NoProviders from './views/NoProviders.vue';
 
 const routes = [
   {
@@ -26,6 +27,11 @@ const routes = [
     path: '/internalError',
     name: 'internalError',
     component: InternalError
+  },
+  {
+    path: '/noProviders',
+    name: 'noProviders',
+    component: NoProviders
   }
 ];
 

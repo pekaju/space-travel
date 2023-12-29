@@ -112,11 +112,13 @@ func handlePostAPI(w http.ResponseWriter, r *http.Request, db *sql.DB) {
 	var booking structs.Booking
 	err := json.NewDecoder(r.Body).Decode(&booking)
 	if err != nil {
+		log.Println("error: ", err)
 		http.Error(w, "Internal error", http.StatusInternalServerError)
 		return
 	}
 	err = database.AddBooking(db, booking)
 	if err != nil {
+		log.Println("error: ", err)
 		http.Error(w, "Internal Server Error", http.StatusInternalServerError)
 		return
 	}
@@ -192,5 +194,6 @@ func main() {
 	if port == "" {
 		port = "8080" // Default port if not specified
 	}
+	log.Println("Listening on port " + port)
 	log.Fatal(http.ListenAndServe(":"+port, handler))
 }

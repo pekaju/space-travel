@@ -45,13 +45,15 @@ export default {
       } else if (!this.bookingDetails.firstName || !this.bookingDetails.lastName) {
         alert("Please enter both 'First Name' and 'Last Name' values.");
       } else {
+        const requestData = { ...this.bookingDetails };
+        delete requestData.validUntil;
         console.log("fetching");
         const response = await fetch(`http://localhost:8080/api/post`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(this.bookingDetails),
+          body: JSON.stringify(requestData),
         });
         if (response.status === 200) {
           this.$emit('confirm');

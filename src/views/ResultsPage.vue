@@ -109,8 +109,14 @@ export default {
         };
     },
     beforeMount() {
-        this.from = this.$route.query.from;
-        this.destination = this.$route.query.destination;
+        const from = this.$route.query.from.toLowerCase();
+        const destination = this.$route.query.destination.toLowerCase();
+
+        const regex = /^[a-zA-Z]+$/;
+        if (regex.test(from) && regex.test(destination)) {
+            this.from = from[0].toUpperCase() + from.slice(1);
+            this.destination = destination[0].toUpperCase() + destination.slice(1);
+        }
         this.fetchFlights();
     },
     computed: {
@@ -146,7 +152,10 @@ export default {
 
             const data = await response.json();
             console.log(data);
-
+            if (data.possibleRoutes.length === 0) {
+                this.$router.push({ name: "noProviders" });
+                return;
+            }
             const formattedProviders = data.possibleRoutes.map(leg => {
                 return {
                     ...leg,
@@ -262,7 +271,6 @@ export default {
         },
 
         confirmBooking(bookingDetails) {
-            console.log('Booking Confirmed:', bookingDetails);
             this.isBookingModalOpen = false;
         },
         cancelBooking() {

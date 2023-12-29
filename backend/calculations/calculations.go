@@ -21,7 +21,6 @@ var planetRoutes = map[string][]string{
 	"Uranus":  {"Saturn", "Neptune"},
 	"Neptune": {"Uranus", "Mercury"},
 }
-
 // Recursive function to calculate all possible routes between two planets
 func CalculateShortestRoute(from string, destination string) ([]Route) {
 	var allRoutes [][]string

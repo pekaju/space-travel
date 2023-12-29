@@ -7,14 +7,19 @@
     "serve": "concurrently \"npm run vue-serve\" \"npm run go-serve\"",
     "vue-serve": "vue-cli-service serve --port 8085 --open",
     "go-serve": "cd backend && go run main.go",
+    "prebuild": "npm install && cd backend && go mod init space-travel && go mod tidy",
     "build": "npm run vue-build && npm run go-build",
     "vue-build": "vue-cli-service build",
     "go-build": "cd backend && go build -o app && cd ..",
-    "start": "npm run build && npm run go-start",
-    "go-start": "cd backend && ./app"
+    "start": "npm run start-prod & npm run go-start",
+    "vue-start": "vue-cli-service serve --port 8085 --open",
+    "go-start": "cd backend && ./app",
+    "start-prod": "serve -s dist -l 8085"
+
   },
   "devDependencies": {
     "@vue/cli-service": "^4.3.0",
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "serve": "^14.2.1"
   }
 }

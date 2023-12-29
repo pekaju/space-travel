@@ -31,9 +31,8 @@ func AddBooking(db *sql.DB, booking structs.Booking) error {
 			TotalDuration,
 			PricelistID,
 			FromCity,
-			DestinationCity,
-			ValidUntil
-		) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+			DestinationCity
+		) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
 	`
 
 	_, err := db.Exec(
@@ -47,7 +46,6 @@ func AddBooking(db *sql.DB, booking structs.Booking) error {
 		booking.PricelistID,
 		booking.Routes.From,
 		booking.Routes.Destination,
-		booking.ValidUntil,
 	)
 	if err != nil {
 		return fmt.Errorf("failed to insert booking: %v", err)

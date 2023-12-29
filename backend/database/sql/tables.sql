@@ -58,7 +58,6 @@ CREATE TABLE IF NOT EXISTS CachedRoutes (
     PricelistID     VARCHAR(36) REFERENCES Pricelists(ID),
     FromLocation    VARCHAR(255) NOT NULL,
     ToLocation      VARCHAR(255) NOT NULL,
-    ValidUntil      TIMESTAMP,
     Routes          TEXT
 );
 
@@ -73,6 +72,5 @@ CREATE TABLE IF NOT EXISTS Bookings (
     TotalDuration TEXT NOT NULL,
     PricelistID INTEGER NOT NULL,
     FromCity TEXT NOT NULL,
-    DestinationCity TEXT NOT NULL,
-    ValidUntil TEXT
+    DestinationCity TEXT NOT NULL
 );
