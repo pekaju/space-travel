@@ -14,7 +14,7 @@
     "start": "npm run start-prod & npm run go-start",
     "vue-start": "vue-cli-service serve --port 8085 --open",
     "go-start": "cd backend && ./app",
-    "start-prod": "serve -s dist -l 443"
+    "start-prod": "serve -s dist -l 8085"
 
   },
   "devDependencies": {
